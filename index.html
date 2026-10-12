@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sysred: instalación de cámaras de seguridad, redes, fibra óptica, soporte técnico y sistemas POS en Medellín y Antioquia.">
+  <title>Sysred | Tecnología y Seguridad Electrónica</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #172033;
+      background: #f5f7fb;
+      line-height: 1.6;
+    }
+    header {
+      background: #101a2b;
+      color: white;
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .logo { font-size: 28px; font-weight: 800; }
+    .logo span { color: #20a4f3; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #101a2b, #174b78);
+      color: white;
+      padding: 90px 8%;
+      text-align: center;
+    }
+    .hero h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.15; }
+    .hero p { font-size: 19px; max-width: 700px; margin: 20px auto 30px; }
+    .btn {
+      display: inline-block;
+      background: #0797e8;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section { padding: 60px 8%; }
+    .center { text-align: center; }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px #15274410;
+    }
+    .card .emoji { font-size: 34px; }
+    .card h3 { color: #174b78; }
+    .contact { background: #e7eff8; text-align: center; }
+    footer {
+      background: #101a2b;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      header { justify-content: center; text-align: center; }
+      nav a { margin: 0 7px; font-size: 14px; }
+      .hero { padding: 60px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SYS<span>RED</span></div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Tecnología, conectividad y seguridad para tu negocio</h1>
+      <p>
+        Soluciones profesionales en videovigilancia, redes,
+        fibra óptica, equipos de cómputo y soporte técnico.
+      </p>
+      <a class="btn" href="#contacto">Solicitar asesoría</a>
+    </section>
+
+    <section id="servicios">
+      <div class="center">
+        <h2>Nuestros servicios</h2>
+        <p>Soluciones tecnológicas para empresas y hogares.</p>
+      </div>
+      <div class="services">
+        <article class="card">
+          <div class="emoji">📹</div>
+          <h3>Cámaras de seguridad</h3>
+          <p>Instalación y mantenimiento de CCTV, grabadores y acceso remoto.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🌐</div>
+          <h3>Redes y fibra óptica</h3>
+          <p>Cableado estructurado, Wi-Fi empresarial, enlaces y conectividad.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">💻</div>
+          <h3>Soporte técnico</h3>
+          <p>Mantenimiento de computadores, servidores y asistencia remota o presencial.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🧾</div>
+          <h3>Sistemas POS</h3>
+          <p>Instalación y configuración de equipos, impresoras y periféricos.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🔐</div>
+          <h3>Control de acceso</h3>
+          <p>Soluciones de control de ingreso y sistemas de asistencia.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🖥️</div>
+          <h3>Servidores y mantenimiento</h3>
+          <p>Configuración, respaldo y mantenimiento de infraestructura tecnológica.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="nosotros" class="center">
+      <h2>Tu aliado tecnológico: Sysred</h2>
+      <p>
+        Ayudamos a empresas y hogares a mantener sus sistemas
+        tecnológicos conectados, protegidos y funcionando.
+      </p>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>¿Necesitas una solución tecnológica?</h2>
+      <p>Contáctanos para recibir asesoría y cotizar tu proyecto.</p>
+      <a class="btn"
+         href="https://wa.me/57TU_NUMERO"
+         target="_blank" rel="noopener">
+        Contactar por WhatsApp
+      </a>
+      <p>Atención en Medellín, Bello y Antioquia.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Sysred · Tecnología y Seguridad Electrónica</p>
+  </footer>
+</body>
+</html>

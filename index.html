@@ -1,149 +1,519 @@
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sysred ofrece soluciones empresariales en videovigilancia, redes, fibra óptica, soporte técnico, sistemas POS y control de acceso en Medellín, Bello y Antioquia.">
-  <meta name="theme-color" content="#101b32">
-  <title>Sysred | Tecnología, conectividad y seguridad</title>
-  <link rel="stylesheet" href="estilos/estilo.css">
+    <!-- ==================================================
+         1. CONFIGURACIÓN GENERAL DEL DOCUMENTO
+         ================================================== -->
+
+    <!-- Permite utilizar caracteres especiales del español -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página se adapte a celulares, tabletas y PC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descripción que pueden utilizar los buscadores -->
+    <meta name="description"
+          content="Sysred ofrece soluciones empresariales en seguridad electrónica, CCTV, redes, fibra óptica, soporte técnico, computadores y sistemas POS en Medellín, Bello y Antioquia.">
+
+    <!-- Indica a los buscadores el nombre de la empresa -->
+    <meta name="author" content="Sysred">
+
+    <!-- Color de la barra del navegador en algunos dispositivos -->
+    <meta name="theme-color" content="#101B32">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Sysred | Tecnología, Redes y Seguridad Electrónica</title>
+
+
+    <!-- ==================================================
+         2. HOJA DE ESTILOS EXTERNA
+         ================================================== -->
+
+    <!--
+        Los estilos están separados del HTML para facilitar
+        el mantenimiento del diseño.
+
+        Archivo: estilos/estilo.css
+    -->
+    <link rel="stylesheet" href="estilos/estilo.css">
+
+
+    <!-- ==================================================
+         3. ICONO DE LA PESTAÑA (FAVICON)
+         ================================================== -->
+
+    <!--
+        Cuando tengamos el icono definitivo de Sysred,
+        podemos guardar una versión pequeña del logo en:
+
+        imagenes/favicon.png
+    -->
+
+    <link rel="icon" type="image/png" href="imagenes/favicon.png">
+
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#inicio" aria-label="Sysred, inicio">
-        <img src="imagenes/sysred-logo.png" alt="Logotipo de Sysred">
-        <span class="brand-word">SYS<span>RED</span></span>
-      </a>
-      <nav aria-label="Navegación principal">
-        <a href="#servicios">Servicios</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#cobertura">Cobertura</a>
-        <a class="nav-cta" href="#contacto">Contactar</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">Soluciones para empresas</span>
-          <h1>Tecnología que conecta y protege tu negocio.</h1>
-          <p>Integramos seguridad electrónica, redes y soporte tecnológico para ayudar a tu empresa a trabajar con confianza y continuidad.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#contacto">Solicitar asesoría</a>
-            <a class="btn btn-outline" href="#servicios">Conocer servicios</a>
-          </div>
-        </div>
-        <div class="hero-mark">
-          <img src="imagenes/sysred-logo.png" alt="" aria-hidden="true">
-        </div>
-      </div>
-    </section>
+    <!-- ==================================================
+         4. ENCABEZADO PRINCIPAL
+         ================================================== -->
 
-    <section id="servicios">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Qué hacemos</span>
-          <h2>Soluciones tecnológicas para tu empresa</h2>
-          <p>Servicios de instalación, configuración, mantenimiento y soporte adaptados a las necesidades de cada negocio.</p>
-        </div>
-        <div class="services-grid">
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">▣</div>
-            <h3>Cámaras y seguridad electrónica</h3>
-            <p>Instalación y mantenimiento de CCTV, grabadores, visualización remota y soluciones de seguridad.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">⌁</div>
-            <h3>Redes y fibra óptica</h3>
-            <p>Cableado estructurado, redes inalámbricas, enlaces entre sedes y conectividad por fibra óptica.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">▤</div>
-            <h3>Soporte y mantenimiento</h3>
-            <p>Mantenimiento preventivo y correctivo de computadores, servidores y equipos empresariales.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">▦</div>
-            <h3>Sistemas POS e impresión</h3>
-            <p>Instalación y configuración de puntos de venta, impresoras térmicas y periféricos.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">⌑</div>
-            <h3>Control de acceso y asistencia</h3>
-            <p>Soluciones para gestionar accesos, registros de asistencia y dispositivos de control.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">▣</div>
-            <h3>Servidores y soluciones TI</h3>
-            <p>Configuración de infraestructura, respaldo de información y acompañamiento técnico.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+    <!--
+        Contiene el logotipo y el menú de navegación.
 
-    <section class="about" id="nosotros">
-      <div class="container about-grid">
-        <div class="about-panel">
-          <span class="eyebrow">Sysred</span>
-          <strong>Un aliado tecnológico para la operación diaria de tu empresa.</strong>
-          <p>Trabajamos para que tu infraestructura tecnológica sea confiable, organizada y esté preparada para crecer.</p>
-        </div>
-        <div>
-          <span class="eyebrow">Cómo te ayudamos</span>
-          <h2>Soluciones claras, soporte cercano</h2>
-          <p class="muted">Acompañamos a empresas en la instalación, puesta en marcha y mantenimiento de sus sistemas tecnológicos.</p>
-          <ul class="check-list">
-            <li>Asesoría según las necesidades del proyecto.</li>
-            <li>Instalación y configuración de equipos.</li>
-            <li>Mantenimiento preventivo y correctivo.</li>
-            <li>Soporte presencial en nuestra zona de cobertura.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+        El encabezado utilizará un fondo azul oscuro,
+        de acuerdo con la identidad visual de Sysred.
+    -->
+    <header class="encabezado">
 
-    <section class="coverage" id="cobertura">
-      <div class="container">
-        <span class="eyebrow">Zona de servicio</span>
-        <h2>Estamos cerca de tu empresa</h2>
-        <p class="muted">Atención en Medellín, Bello y municipios de Antioquia, según el alcance del proyecto.</p>
-        <span class="coverage-pill">Medellín</span>
-        <span class="coverage-pill">Bello</span>
-        <span class="coverage-pill">Antioquia</span>
-      </div>
-    </section>
+        <!-- Logotipo de la empresa -->
+        <a class="marca"
+           href="#inicio"
+           aria-label="Sysred - Ir al inicio">
 
-    <section class="contact" id="contacto">
-      <div class="container">
-        <div class="contact-box">
-          <span class="eyebrow">Hablemos de tu proyecto</span>
-          <h2>¿Necesitas una solución tecnológica?</h2>
-          <p>Cuéntanos qué necesita tu empresa y conversemos sobre la mejor solución.</p>
-          <div class="contact-links">
-            <a class="btn btn-primary" href="https://wa.me/573113777443" target="_blank" rel="noopener noreferrer">Contactar por WhatsApp</a>
-            <a class="btn btn-outline" href="mailto:sysred.info@gmail.com">Enviar correo</a>
-          </div>
-          <div class="socials" aria-label="Redes sociales">
-            <!-- Reemplazar los enlaces #contacto por las URL oficiales de cada perfil cuando se confirmen. -->
-            <a href="#contacto" aria-label="Facebook de Sysred">f&nbsp; Facebook</a>
-            <a href="#contacto" aria-label="Instagram de Sysred">◎&nbsp; Instagram</a>
-            <a href="#contacto" aria-label="TikTok de Sysred">♪&nbsp; TikTok</a>
-          </div>
-          <p class="social-handle">Redes: @Sysred.co</p>
+            <!--
+                Ruta del logotipo:
+                imagenes/sysred-logo.png
+            -->
+            <img
+                src="imagenes/sysred-logo.png"
+                alt="Logotipo de Sysred"
+                class="logo"
+            >
+
+            <!-- Nombre textual para reforzar la identificación -->
+            <span class="nombre-marca">SYSRED</span>
+
+        </a>
+
+
+        <!-- Menú principal de navegación -->
+        <nav class="menu-principal" aria-label="Navegación principal">
+
+            <!-- Lleva a la portada -->
+            <a href="#inicio">Inicio</a>
+
+            <!-- Lleva al catálogo de servicios -->
+            <a href="#servicios">Servicios</a>
+
+            <!-- Lleva a la presentación de la empresa -->
+            <a href="#nosotros">Nosotros</a>
+
+            <!-- Lleva a los datos de contacto -->
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==================================================
+         5. CONTENIDO PRINCIPAL
+         ================================================== -->
+
+    <main>
+
+        <!-- ==============================================
+             5.1. PORTADA O SECCIÓN PRINCIPAL
+             ============================================== -->
+
+        <section id="inicio" class="portada">
+
+            <!-- Contenedor del mensaje principal -->
+            <div class="contenido-portada">
+
+                <!-- Mensaje principal de la empresa -->
+                <h1>
+                    Tecnología que conecta y protege tu empresa
+                </h1>
+
+                <!-- Descripción breve de la propuesta de valor -->
+                <p>
+                    Soluciones profesionales en seguridad electrónica,
+                    redes, conectividad, infraestructura tecnológica
+                    y soporte técnico para empresas y negocios.
+                </p>
+
+                <!--
+                    Botón que lleva al apartado de contacto.
+                    No requiere JavaScript.
+                -->
+                <a href="#contacto" class="boton boton-principal">
+                    Solicitar asesoría
+                </a>
+
+                <!-- Botón secundario para consultar servicios -->
+                <a href="#servicios" class="boton boton-secundario">
+                    Conocer nuestros servicios
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================================
+             5.2. CATÁLOGO DE SERVICIOS
+             ============================================== -->
+
+        <section id="servicios" class="seccion servicios">
+
+            <!-- Encabezado de la sección -->
+            <div class="encabezado-seccion">
+
+                <h2>Nuestros servicios</h2>
+
+                <p>
+                    Acompañamos a las empresas en la instalación,
+                    mantenimiento y administración de su infraestructura
+                    tecnológica.
+                </p>
+
+            </div>
+
+
+            <!--
+                Cada tarjeta representa una categoría de servicio.
+                Posteriormente podemos agregar imágenes, páginas
+                individuales, precios o formularios de cotización.
+            -->
+            <div class="rejilla-servicios">
+
+
+                <!-- Servicio 1: videovigilancia -->
+                <article class="tarjeta-servicio">
+
+                    <div class="icono-servicio" aria-hidden="true">
+                        📹
+                    </div>
+
+                    <h3>Cámaras de seguridad</h3>
+
+                    <p>
+                        Instalación, configuración y mantenimiento
+                        de sistemas CCTV, cámaras IP, grabadores
+                        y acceso remoto.
+                    </p>
+
+                </article>
+
+
+                <!-- Servicio 2: redes y fibra óptica -->
+                <article class="tarjeta-servicio">
+
+                    <div class="icono-servicio" aria-hidden="true">
+                        🌐
+                    </div>
+
+                    <h3>Redes y fibra óptica</h3>
+
+                    <p>
+                        Cableado estructurado, redes inalámbricas,
+                        enlaces de comunicación, fibra óptica
+                        y conectividad empresarial.
+                    </p>
+
+                </article>
+
+
+                <!-- Servicio 3: computadores -->
+                <article class="tarjeta-servicio">
+
+                    <div class="icono-servicio" aria-hidden="true">
+                        💻
+                    </div>
+
+                    <h3>Computadores y soporte técnico</h3>
+
+                    <p>
+                        Mantenimiento preventivo y correctivo,
+                        configuración de equipos y asistencia
+                        técnica remota o presencial.
+                    </p>
+
+                </article>
+
+
+                <!-- Servicio 4: sistemas POS -->
+                <article class="tarjeta-servicio">
+
+                    <div class="icono-servicio" aria-hidden="true">
+                        🧾
+                    </div>
+
+                    <h3>Sistemas POS</h3>
+
+                    <p>
+                        Instalación y configuración de equipos POS,
+                        impresoras térmicas, periféricos y
+                        componentes para puntos de venta.
+                    </p>
+
+                </article>
+
+
+                <!-- Servicio 5: control de acceso -->
+                <article class="tarjeta-servicio">
+
+                    <div class="icono-servicio" aria-hidden="true">
+                        🔐
+                    </div>
+
+                    <h3>Control de acceso y asistencia</h3>
+
+                    <p>
+                        Soluciones de control de ingreso,
+                        identificación de usuarios y sistemas
+                        de registro de asistencia.
+                    </p>
+
+                </article>
+
+
+                <!-- Servicio 6: servidores -->
+                <article class="tarjeta-servicio">
+
+                    <div class="icono-servicio" aria-hidden="true">
+                        🖥️
+                    </div>
+
+                    <h3>Servidores y mantenimiento</h3>
+
+                    <p>
+                        Configuración de servidores, mantenimiento
+                        de infraestructura, respaldo de información
+                        y soporte de sistemas empresariales.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================================
+             5.3. PRESENTACIÓN DE LA EMPRESA
+             ============================================== -->
+
+        <section id="nosotros" class="seccion nosotros">
+
+            <div class="contenido-nosotros">
+
+                <h2>Tu aliado tecnológico: Sysred</h2>
+
+                <p>
+                    Ayudamos a las empresas a mantener sus sistemas
+                    tecnológicos conectados, protegidos y funcionando
+                    de manera confiable.
+                </p>
+
+                <p>
+                    Ofrecemos soluciones adaptadas a las necesidades
+                    de cada organización, desde instalaciones nuevas
+                    hasta mantenimiento y soporte de infraestructura
+                    existente.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================================
+             5.4. ZONA DE COBERTURA
+             ============================================== -->
+
+        <section class="seccion cobertura">
+
+            <div class="encabezado-seccion">
+
+                <h2>Zona de cobertura</h2>
+
+                <p>
+                    Prestamos servicios en Medellín, Bello y otros
+                    municipios de Antioquia, según las características
+                    y necesidades de cada proyecto.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================================
+             5.5. CONTACTO COMERCIAL
+             ============================================== -->
+
+        <section id="contacto" class="seccion contacto">
+
+            <div class="contenido-contacto">
+
+                <h2>¿Necesitas una solución tecnológica?</h2>
+
+                <p>
+                    Cuéntanos qué necesita tu empresa.
+                    Podemos orientarte sobre nuestros servicios
+                    y ayudarte a evaluar tu proyecto.
+                </p>
+
+
+                <!--
+                    Botón de WhatsApp.
+
+                    El formato del enlace es:
+                    https://wa.me/ + indicativo del país + número
+
+                    Se escribe sin el signo +, espacios ni guiones.
+                -->
+                <a
+                    class="boton boton-whatsapp"
+                    href="https://wa.me/573113777443"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Contactar a Sysred por WhatsApp"
+                >
+                    Contactar por WhatsApp
+                </a>
+
+
+                <!--
+                    Correo empresarial.
+
+                    Este enlace abre la aplicación de correo
+                    configurada por el usuario.
+                -->
+                <a
+                    class="boton boton-correo"
+                    href="mailto:sysred.info@gmail.com"
+                >
+                    Escribir por correo electrónico
+                </a>
+
+
+                <!-- Zona de atención -->
+                <p class="texto-cobertura">
+                    Atención en Medellín, Bello y Antioquia.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================================================
+         6. PIE DE PÁGINA
+         ================================================== -->
+
+    <!--
+        Aquí agrupamos las redes sociales y la información
+        institucional de Sysred.
+    -->
+    <footer class="pie-pagina">
+
+
+        <!-- Nombre de la empresa -->
+        <div class="informacion-pie">
+
+            <p class="nombre-pie">
+                SYSRED
+            </p>
+
+            <p>
+                Tecnología, conectividad y seguridad electrónica.
+            </p>
+
         </div>
-      </div>
-    </section>
-  </main>
 
-  <footer>
-    <div class="container footer-row">
-      <div class="footer-brand">SYS<span>RED</span></div>
-      <p>© 2026 Sysred. Tecnología, conectividad y seguridad.</p>
-      <p>Medellín · Bello · Antioquia</p>
-    </div>
-  </footer>
+
+        <!-- ==============================================
+             6.1. REDES SOCIALES
+             ============================================== -->
+
+        <div class="redes-sociales">
+
+            <h2 class="titulo-redes">
+                Síguenos en redes sociales
+            </h2>
+
+
+            <!-- Instagram oficial de Sysred -->
+            <a
+                href="https://www.instagram.com/sysred.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram oficial de Sysred"
+            >
+                Instagram
+            </a>
+
+
+            <!--
+                Facebook de Sysred.
+
+                Se utiliza el enlace compartido proporcionado.
+                Conviene comprobar que abra la página empresarial
+                correcta antes de considerar definitivo el enlace.
+            -->
+            <a
+                href="https://www.facebook.com/share/1T8P83bU1i/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook de Sysred"
+            >
+                Facebook
+            </a>
+
+
+            <!--
+                TikTok se agregará cuando tengamos la dirección
+                oficial del perfil de Sysred.
+            -->
+
+        </div>
+
+
+        <!-- ==============================================
+             6.2. DERECHOS DE AUTOR
+             ============================================== -->
+
+        <div class="derechos-autor">
+
+            <!--
+                El año está escrito manualmente.
+                Actualizarlo cuando corresponda.
+            -->
+            <p>
+                &copy; 2026 Sysred. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
+    <!-- ==================================================
+         7. JAVASCRIPT
+         ================================================== -->
+
+    <!--
+        Cuando necesitemos funciones interactivas,
+        podremos cargarlas desde la carpeta scripts.
+
+        Ejemplo futuro:
+        scripts/principal.js
+
+        Por ahora no se necesita JavaScript para que
+        los menús, las secciones y los enlaces funcionen.
+    -->
+
 </body>
+
 </html>

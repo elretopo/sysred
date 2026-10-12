@@ -1,0 +1,1 @@
+Carpeta reservada para JavaScript futuro. Actualmente la página no necesita scripts externos.
